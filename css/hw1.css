@@ -76,7 +76,7 @@ main header {
 .card {
   position: relative;
   background-color: #090a0c;
-  overflow: hidden;
+  overflow: scroll;
 }
 .card p:hover {
   overflow: scroll;
@@ -116,7 +116,7 @@ main header {
 
 .h-card {
   padding: 1rem;
-  overflow: hidden;
+  overflow: scroll;
   background-color: #090a0c;
 }
 
@@ -135,4 +135,29 @@ p {
 footer {
   padding: 10px;
   background-color: #090a0c;
+}
+
+@media only screen and (max-width: 700px) {
+  .title {
+  z-index: 100;
+  position: absolute;
+  color: rgb(222, 255, 255);
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 40px;
+  font-weight: 100;
+  font-size: 20px;
+  padding: 10px;
+}
+
+main {
+    grid-template-rows: 200px 400px 40px 500px;
+}
+
+h3,p {
+    padding: 5px;
+  margin: 5px;
+  font-size: 15px;
+  font-weight: 100;
+}
 }
