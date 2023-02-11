@@ -47,7 +47,7 @@ nav ul a {
 
 main {
   display: grid;
-  grid-template-rows: 800px 500px 40px 500px;
+  grid-template-rows: auto 500px 40px 500px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
@@ -130,8 +130,6 @@ p {
 }
 /*-main-*/
 
-
-
 footer {
   padding: 10px;
   background-color: #090a0c;
@@ -139,25 +137,26 @@ footer {
 
 @media only screen and (max-width: 700px) {
   .title {
-  z-index: 100;
-  position: absolute;
-  color: rgb(222, 255, 255);
-  justify-content: center;
-  margin-left: 30px;
-  margin-top: 40px;
-  font-weight: 100;
-  font-size: 20px;
-  padding: 10px;
-}
+    z-index: 100;
+    position: absolute;
+    color: rgb(222, 255, 255);
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 10px;
+  }
 
-main {
-    grid-template-rows: 200px 400px 40px 500px;
-}
+  main {
+    grid-template-rows: auto auto auto auto;
+  }
 
-h3,p {
+  h3,
+  p {
     padding: 5px;
-  margin: 5px;
-  font-size: 15px;
-  font-weight: 100;
-}
+    margin: 5px;
+    font-size: 15px;
+    font-weight: 100;
+  }
 }
